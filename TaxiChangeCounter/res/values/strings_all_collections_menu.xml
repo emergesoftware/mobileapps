@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="clear_all_collections">Clear all</string>
+    <string name="view_collection_to_history">View history</string>
+    <string name="application_help">Help</string>
+    <string name="about_application">About</string>
+    <string name="add_new_collection">Add New</string>
+</resources>

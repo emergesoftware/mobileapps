@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainContent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/collection_line_view_background"
+    >
+        
+        <!-- the totals header text will come under this layout -->
+        <LinearLayout 
+            android:id="@+id/topHeadersSection"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal"
+        	android:layout_marginTop="10dp"
+        	android:layout_marginLeft="5dp"
+    		android:layout_marginRight="5dp"
+        	android:weightSum="1.0"
+            >
+            
+            <!-- the header text for amount paid -->
+            <TextView
+                android:id="@+id/totalAmountPaidHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/medium_font_size"
+                android:textColor="@color/white_color"
+                android:textStyle="bold"
+                android:text="@string/amount_brought_forward_header"
+                android:layout_weight="0.5"
+               />
+            
+            <!-- the header text for number of passengers -->
+             <TextView
+                android:id="@+id/passengersHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/medium_font_size"
+                android:textColor="@color/white_color"
+                android:textStyle="bold"
+                android:text="@string/passengers_header"
+                android:layout_weight="0.5"
+               />
+            
+        </LinearLayout>
+        
+        <!-- the total values for the headers are wrapped in here -->
+        
+        <LinearLayout 
+            android:id="@+id/topValuesSection"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal"
+        	android:layout_marginTop="0dp"
+        	android:layout_marginLeft="5dp"
+    		android:layout_marginRight="5dp"
+        	android:weightSum="1.0"
+            >
+            
+            <!-- the value text for amount paid -->
+            <TextView
+                android:id="@+id/amountPaidValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/medium_font_size"
+                android:textColor="@color/white_color"
+                android:layout_weight="0.5"
+               />
+            
+            <!-- the value text for number of passengers -->
+             <TextView
+                android:id="@+id/passengersValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/medium_font_size"
+                android:textColor="@color/white_color"
+                android:layout_weight="0.5"
+               />
+            
+        </LinearLayout>
+        
+        <!-- the change due header -->
+        <TextView
+                android:id="@+id/changeDueHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/medium_font_size"
+                android:textColor="@color/white_color"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+    		    android:layout_marginRight="5dp"
+                android:text="@string/change_due_header"
+                
+               />
+        
+        <!-- the change due value -->
+        <TextView
+                android:id="@+id/changeDueValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/medium_font_size"
+                android:textColor="@color/white_color"
+                android:layout_marginRight="5dp"
+            	android:layout_marginLeft="5dp"
+                
+               />
+        
+        <!-- The divider line -->
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/lighter_blue_color"
+            />
+        
+        <!-- the action buttons section -->
+        <LinearLayout 
+            android:id="@+id/actionButtonsSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            >
+            
+            <!-- image button for editing the collection details -->
+            <ImageView 
+                android:id="@+id/editCollectionDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/edit_collection_details_content_desc"
+                android:src="@drawable/ic_action_edit"
+                android:scaleType="fitStart"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+            
+            <!-- a divider -->
+             <View 
+		        android:id="@+id/horizontalDivider"
+		        android:layout_width="1dp"
+		        android:layout_height="match_parent"
+		        android:layout_marginTop="5dp"
+		        android:layout_marginBottom="5dp"
+		        android:background="@android:color/darker_gray"
+		        />
+            
+             <!-- image button to delete the current collection -->
+              <ImageView 
+                android:id="@+id/deleteCollectionDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/delete_collection_details_content_desc"
+                android:src="@drawable/ic_action_remove"
+                android:scaleType="fitStart"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+        
+    </LinearLayout>
+</LinearLayout>

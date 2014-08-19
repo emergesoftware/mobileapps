@@ -1,0 +1,137 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AboutActivity" 
+    android:orientation="vertical"
+    android:background="@drawable/default_background"
+    android:id="@+id/mainScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    >
+    
+    <LinearLayout
+         android:layout_width="match_parent"
+   		 android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:layout_marginLeft="10dp"
+    	 android:layout_marginRight="10dp"
+    	 android:layout_marginBottom="20dp"
+         android:orientation="vertical"
+    		>
+    		 
+         <TextView 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textColor="@color/darker_gray"
+         android:textSize="@dimen/medium_font_size"
+         android:layout_gravity="center"
+         android:text="@string/about_text_header"
+         android:textStyle="bold"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"
+       />
+        
+         <View 
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_margin="0dp"
+       android:background="@color/darker_gray"
+       />
+        
+     <TextView 
+         android:id="@+id/aboutText"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textColor="@color/white_color"
+         android:textSize="@dimen/small_font_size"
+         android:layout_gravity="left"
+         android:text="@string/about_text"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"
+         
+       />
+     
+     <TextView 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textColor="@color/darker_gray"
+         android:textSize="@dimen/medium_font_size"
+         android:layout_gravity="center"
+         android:text="@string/contact_us_text_header"
+         android:textStyle="bold"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"
+       />
+    
+     <View 
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_margin="0dp"
+       android:background="@color/darker_gray"
+       />
+     
+     <TextView 
+         android:id="@+id/contactUsText"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textColor="@color/white_color"
+         android:textSize="@dimen/small_font_size"
+         android:layout_gravity="left"
+         android:text="@string/contact_us_text"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"
+         
+       />
+     
+     <Button 
+        android:id="@+id/sendEmailToDevelopers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/contact_us_text_header"
+        android:background="@drawable/default_button"
+        android:layout_marginTop="10dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/white_color"
+        android:layout_marginBottom="20dp"
+         />
+     
+    
+     
+       <TextView 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textColor="@color/darker_gray"
+         android:textSize="@dimen/medium_font_size"
+         android:layout_gravity="center"
+         android:text="@string/application_version_header"
+         android:textStyle="bold"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"
+       />
+       
+        <View 
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_margin="0dp"
+       android:background="@color/darker_gray"
+       />
+    
+     <TextView 
+         android:id="@+id/verisonDetails"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textColor="@color/white_color"
+         android:textSize="@dimen/small_font_size"
+         android:layout_gravity="left"
+         android:text="@string/application_version"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"
+         
+       />
+     
+    </LinearLayout>
+</ScrollView>
+

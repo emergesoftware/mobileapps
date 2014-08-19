@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item 
+        android:id="@+id/addNewCollectionMenuItem"
+        android:showAsAction="ifRoom"
+        android:title="@string/add_new_collection"
+        android:icon="@drawable/ic_action_new_dark"
+        />
+    
+    <item
+        android:id="@+id/clearAllCollectionsMenuItem"
+        android:showAsAction="never"
+        android:title="@string/clear_all_collections"/>
+    
+     <!-- item
+        android:id="@+id/viewCollectionHistoryMenuItem"
+        android:showAsAction="never"
+        android:title="@string/view_collection_to_history"/-->
+     
+      <!--item
+        android:id="@+id/helpMenuItem"
+        android:showAsAction="never"
+        android:title="@string/application_help"/-->
+      
+       <item
+        android:id="@+id/aboutMenuItem"
+        android:showAsAction="never"
+        android:title="@string/about_application"/>
+
+</menu>

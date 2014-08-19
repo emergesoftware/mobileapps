@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:orientation="horizontal" 
+    android:background="@color/red_color"
+    android:layout_margin="0dp">
+    
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="@dimen/large_font_size"
+        android:textColor="@color/white_color"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:text="@string/enter_unit_cost_activity_title"
+    />
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about_text_header">About</string>
+    
+    <string name="about_text">
+        Are you feeling brain washed from a long day?
+        Or are you simply just not keen on taking on the front seat, 
+        because of the disputes that may arise if you happen to count
+        the change incorrectly?\n\n
+        Fear no more because this is just the application to assist you.
+        Shot Left App is a designed to make the counting of change 
+        much easier, efficient and error free. It easily keeps track of
+        the collections and you don\'t do any counting yourself - it automatically
+        counts for you, tell you if the money is short and determines the change
+        and the money you should give to the taxi driver.\n\n
+        This application is most useful for the large number of taxi users
+        across South Africa - and it has become a norm and tradition for
+        any passenger occupying the front seat to assist with the
+        collection of transport payment during the ride.
+    </string>
+    
+    <string name="contact_us_text_header">Contact Us</string>
+    
+    <string name="contact_us_text">
+        Thank you for trying out the app, if you need any application support,
+        or have any queries or great suggestions on how this application can be
+        improved, do not hesitate to email us. After all, this is a proudly South
+        African app.
+    </string>
+    
+    <string name="application_version_header">Version</string>
+    
+    <string name="application_version">VERSION: 1.1.6 (Beta)\nDATE: 17/12/2013\nDEVELOPED BY: TSEPO MALEKA\n\n</string>
+    
+</resources>

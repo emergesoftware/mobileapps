@@ -1,0 +1,106 @@
+<!-- scroll view for the main content  -->
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+    	tools:context=".MainActivity"
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        android:background="@drawable/default_background"
+        >
+   	
+          <!-- the main content layout -->
+	   <LinearLayout
+	       android:id="@+id/mainContentLayout"
+	       android:layout_width="match_parent"
+	       android:layout_height="wrap_content"
+	       android:orientation="vertical"
+	       android:paddingLeft="10dp"
+	       android:paddingRight="10dp"
+	       android:paddingBottom="0dp"
+	       android:paddingTop="0dp"
+	       >    
+	    
+       <TextView
+	        android:id="@+id/unitPriceTextView"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/unit_price_label"
+	        android:textColor="@color/white_color"
+	        android:paddingTop="15dp"
+	        android:paddingBottom="15dp"
+	       	android:textAlignment="textStart"
+	       	android:gravity="center_vertical"
+	       	android:layout_marginTop="10dp"
+	       	android:layout_marginBottom="0dp"
+	       	android:layout_marginRight="30dp"
+	       	android:textSize="@dimen/medium_font_size"
+	        />
+	     
+       <!-- This wraps the currency symbol and the edit box -->
+	    <LinearLayout
+	        android:id="@+id/unitCostWrapperLayout"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	       	android:layout_marginBottom="10dp"
+	        android:padding="0dp"
+	        android:orientation="horizontal"
+	        android:weightSum="1.0"
+	        >
+	        
+	        <!-- the text view for unit price -->
+		    <TextView
+		        android:id="@+id/currencyTextView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/currency_symbol"
+		        android:textColor="@color/white_color"
+		        android:textSize="@dimen/large_font_size"
+		        android:paddingTop="12dp"
+		        android:paddingBottom="12dp"
+		       	android:paddingRight="10dp"
+		       	android:gravity="right"
+		       	android:layout_weight="0.3"
+		        />
+		    
+		     <!-- the edit box for accepting the unit cost -->
+	     	<EditText 
+		         android:id="@+id/unitPriceEditText"
+		         android:layout_width="0dp"
+		         android:layout_height="wrap_content"
+		         android:paddingTop="12dp"
+		         android:paddingBottom="12dp"
+		         android:paddingLeft="20dp"
+		         android:textSize="@dimen/large_font_size"
+		         android:inputType="numberDecimal"
+		         android:textColor="@color/white_color"
+		         android:layout_weight="0.7"
+		         android:maxLength="8"
+
+	         />
+	        
+	    </LinearLayout>
+	        
+	    
+	    
+	     <!-- the button to begin collection counting -->
+	     <Button 
+	         android:id="@+id/startCollectionButton"
+	         android:layout_width="match_parent"
+	         android:layout_height="wrap_content"
+	         android:text="@string/start_collection"
+	         android:background="@drawable/default_button"
+	         android:layout_marginTop="10dp"
+	         android:layout_marginBottom="10dp"
+	         android:paddingTop="20dp"
+	         android:paddingBottom="20dp"
+	         android:textAlignment="center"
+	         android:textColor="@color/white_color"
+	         
+	         />
+	     
+	   </LinearLayout>
+</ScrollView>
+
