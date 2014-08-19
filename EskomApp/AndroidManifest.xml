@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="za.co.emergesoftware.android.eskomapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="za.co.emergesoftware.android.eskomapp.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.HOME" />  
+           </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="za.co.emergesoftware.android.eskomapp.DashboardActivity"
+            android:label="@string/title_activity_dashboard" >
+        </activity>
+        
+        <activity
+            android:name="za.co.emergesoftware.android.eskomapp.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        
+        <activity
+            android:name="za.co.emergesoftware.android.eskomapp.RecoverPassword"
+            android:label="@string/title_activity_recover_password" >
+        </activity>
+        
+    </application>
+
+</manifest>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="splash_screen_background_color">#003399</color>
+    <color name="default_background_color">#D0D0D0</color>
+    <color name="error_text_color">#D00000</color>
+</resources>

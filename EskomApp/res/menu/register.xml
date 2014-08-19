@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/helpMenuItem"
+        android:showAsAction="never"
+        android:title="@string/help_menu_text"/>
+    
+    <item
+        android:id="@+id/termsAndConditionsMenuItem"
+        android:showAsAction="never"
+        android:title="@string/terms_and_conditions_menu_text"
+        />
+
+    <item
+        android:id="@+id/privacyPolicyMenuItem"
+        android:showAsAction="never"
+        android:title="@string/privacy_policy_menu_text"
+        />
+</menu>

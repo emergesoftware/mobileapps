@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- GLOBAL -->
+    <string name="app_name">Eskom App</string>
+
+    <!-- MAIN ACTIVITY VALUES -->
+
+    <string name="splash_screen_image_content_description">Application Splash Image</string>
+    <string name="loading_message">Opening application...</string>
+
+    <!-- LOGIN ACTIVITY VALUES -->
+
+    <string name="title_activity_login">Login</string>
+    <string name="login_instructions">If you have an account created already, you
+        may proceed to login with your details below:</string>
+    <string name="username_label">Username:</string>
+    <string name="password_label">Password:</string>
+    <string name="login_label">Login</string>
+    <string name="have_no_account_message">Have no account? Create one now, it\'s quick
+        and easy.</string>
+    <string name="register_label">Register</string>
+    <string name="recover_password_menu_text">Recover password</string>
+    <string name="exit_application_menu_text">Exit application</string>
+    <string name="authenticating_message_text">Authenticating, please wait...</string>
+
+    <!-- DASHBOARD VALUES -->
+
+    <string name="title_activity_dashboard">Dashboard</string>
+
+    <!-- REGISTER ACTIVITY VALUES -->
+
+    <string name="title_activity_register">Register new account</string>
+    <string name="help_menu_text">Help</string>
+    <string name="terms_and_conditions_menu_text">Terms and conditions</string>
+    <string name="privacy_policy_menu_text">Privacy policy</string>
+    <string name="register_new_account_instructions_text">To create a new account, please provide the following details:</string>
+    <string name="first_name_label">First Name:</string>
+    <string name="last_name_label">Last Name:</string>
+    <string name="id_number_label">Identity Number:</string>
+    <string name="id_number_instructions">NB: Only valid 13 digit South African ID numbers are aceptable.</string>
+    <string name="email_address_label">Email Address:</string>
+    <string name="confirm_email_address_label">Confirm Email Address:</string>
+    <string name="cellphone_number_label">Cellphone Number:</string>
+    <string name="dialing_country_prefix">+27</string>
+    <string name="province_label">Province</string>
+    <string name="register_new_account_accpetance_istructions">	    Before you click \'Create Account\', ensure that you have read 
+	    and do accept our Terms And Conditions.</string>
+    <string name="read_terms_and_conditions_link_text">Read our terms and conditions</string>
+    <string name="read_privacy_policy_link_text">Also check our privacy policy</string>
+    <string name="create_account_button">Create Account</string>
+    <string name="cellphone_number_instruction_text">        Hint: The \'+27\' International dialing prefix 
+        is already included, type in the
+        remaining 9 digits.</string>
+        
+    <!-- RECOVER PASSWORD PAGE -->
+    
+    <string name="title_activity_recover_password">Recover Password</string>
+    <string name="recover_password_instructions">
+        To recover your lost or forgotten password,
+        you will need to provide the details below:
+    </string>
+    <string name="provide_username_label">Enter your username:</string>
+    <string name="provide_email_address_label">Enter your email address:</string>
+    <string name="password_recovery_disclaimer">
+        Please note that we cannot provide you with your previous password,
+        and you will need to reset a new one. We also cannot verify
+        if your have provided a correct combination of your details for
+        resetting your password. Call the customer care centre for
+        further assistance if this fails.
+    </string>
+    <string name="reset_password_button_text">Reset Password</string>
+
+</resources>

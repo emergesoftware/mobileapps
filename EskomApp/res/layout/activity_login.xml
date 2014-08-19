@@ -1,0 +1,177 @@
+<FrameLayout 
+     	xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+    	android:id="@+id/mainFrameLayout"
+    	android:layout_margin="0dp"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	tools:context=".LoginActivity">
+    	
+		<ScrollView
+		    android:id="@+id/scrollViewer"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:background="@color/default_background_color"
+		    android:layout_gravity="fill">
+		    
+			<LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_margin="0dp"
+			    android:orientation="vertical"
+			    android:focusable="true" 
+			    android:focusableInTouchMode="true"
+			     >
+			
+				  <TextView 
+				      android:id="@+id/loginInstructionsTextView"
+				      android:layout_width="match_parent"
+				      android:layout_height="wrap_content"
+				      android:layout_marginLeft="16dp"
+				      android:layout_marginRight="16dp"
+				      android:layout_marginTop="10dp"
+				      android:layout_marginBottom="15dp"
+				      android:textSize="@dimen/small_font_size"
+				      android:textColor="@android:color/black"
+				      android:gravity="left"
+				      android:text="@string/login_instructions"
+				      />
+		
+				  <TextView 
+				      android:layout_width="match_parent"
+				      android:layout_height="wrap_content"
+				      android:layout_marginLeft="16dp"
+				      android:layout_marginRight="16dp"
+				      android:layout_marginTop="5dp"
+				      android:layout_marginBottom="5dp"
+				      android:textSize="@dimen/medium_font_size"
+				      android:textColor="@android:color/black"
+				      android:gravity="left"
+				      android:text="@string/username_label"
+				      android:textStyle="bold"
+				      />
+				  
+				  <EditText 
+				      android:id="@+id/usernameEditText"
+				      android:layout_width="match_parent"
+				      android:layout_height="wrap_content"
+				      android:layout_marginLeft="16dp"
+				      android:layout_marginRight="16dp"
+				      android:layout_marginTop="5dp"
+				      android:layout_marginBottom="5dp"
+				      android:textSize="@dimen/medium_font_size"
+				      android:textColor="@android:color/black"
+				      android:inputType="text"
+				      />
+				  
+				  <TextView 
+				      android:layout_width="match_parent"
+				      android:layout_height="wrap_content"
+				      android:layout_marginLeft="16dp"
+				      android:layout_marginRight="16dp"
+				      android:layout_marginTop="5dp"
+				      android:layout_marginBottom="5dp"
+				      android:textSize="@dimen/medium_font_size"
+				      android:textColor="@android:color/black"
+				      android:gravity="left"
+				      android:text="@string/password_label"
+				      android:textStyle="bold"
+				      />
+				  
+				  <EditText 
+				      android:id="@+id/passwordEditText"
+				      android:layout_width="match_parent"
+				      android:layout_height="wrap_content"
+				      android:layout_marginLeft="16dp"
+				      android:layout_marginRight="16dp"
+				      android:layout_marginTop="5dp"
+				      android:layout_marginBottom="5dp"
+				      android:textSize="@dimen/medium_font_size"
+				      android:textColor="@android:color/black"
+				      android:inputType="textPassword"
+				      />
+				  
+				  <Button 
+				      android:id="@+id/loginButton"
+				      android:layout_width="match_parent"
+				      android:layout_height="52dp"
+				      android:layout_marginLeft="16dp"
+				      android:layout_marginRight="16dp"
+				      android:layout_marginTop="5dp"
+				      android:layout_marginBottom="5dp"
+				      android:textSize="@dimen/medium_font_size"
+				      android:textColor="@android:color/white"
+				      android:gravity="center"
+				      android:text="@string/login_label"
+				      android:paddingTop="5dp"
+				      android:paddingBottom="5dp"
+				      android:background="@drawable/default_button_background"
+				      />
+				  
+				   <TextView 
+				      android:layout_width="match_parent"
+				      android:layout_height="wrap_content"
+				      android:layout_marginLeft="16dp"
+				      android:layout_marginRight="16dp"
+				      android:layout_marginTop="35dp"
+				      android:layout_marginBottom="10dp"
+				      android:textSize="@dimen/small_font_size"
+				      android:textColor="@android:color/black"
+				      android:gravity="left"
+				      android:text="@string/have_no_account_message"
+				      />
+				  
+				   <Button 
+				      android:id="@+id/registerButton"
+				      android:layout_width="match_parent"
+				      android:layout_height="52dp"
+				      android:layout_marginLeft="16dp"
+				      android:layout_marginRight="16dp"
+				      android:layout_marginTop="5dp"
+				      android:layout_marginBottom="5dp"
+				      android:textSize="@dimen/medium_font_size"
+				      android:textColor="@android:color/white"
+				      android:gravity="center"
+				      android:text="@string/register_label"
+				      android:paddingTop="5dp"
+				      android:paddingBottom="5dp"
+				      android:background="@drawable/default_button_background"
+				      />
+			</LinearLayout>
+		</ScrollView>
+		
+		<FrameLayout 
+		    android:id="@+id/loginProgressLayer"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_gravity="fill"
+		    android:layout_marginTop="0dp"
+		    android:background="@drawable/default_transparent_black_background"
+		    android:visibility="gone"
+		    >
+		   
+	        <TextView
+		        android:id="@+id/authenticatingMessage"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="0dp"
+		        android:text="@string/authenticating_message_text"
+		        android:textColor="@android:color/white"
+		        android:textSize="@dimen/small_font_size"
+		        android:gravity="center"
+		        android:layout_gravity="center"
+		        ></TextView>
+	        
+	        <ProgressBar 
+	            android:id="@+id/authenticatingProgressBar"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:indeterminate="true"
+	            android:layout_marginTop="36dp"
+	         />
+	        
+	    
+		    
+		</FrameLayout>
+</FrameLayout>

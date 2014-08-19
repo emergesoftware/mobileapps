@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/recoverPasswordMenuItem"
+        android:showAsAction="never"
+        android:title="@string/recover_password_menu_text"/>
+    
+    <item 
+        android:id="@+id/exitApplicationMenuItem"
+        android:showAsAction="never"
+        android:title="@string/exit_application_menu_text"
+        />
+
+</menu>
