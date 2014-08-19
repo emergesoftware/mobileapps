@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- GLOBALS -->
+
+    <string name="app_name">Metrobus App</string>
+
+    <!-- DASHBOARD ACTIVITY -->
+    <string name="dashboard_activity_title">Dashboard</string>
+    <string name="time_table_tile_title">Time Tables</string>
+    <string name="search_tile_title">Search</string>
+    <string name="locate_tile_title">Locate</string>
+    <string name="fares_tile_title">Fares</string>
+    <string name="contact_title_title">Contact</string>
+    <string name="about_app_menu_item">About</string>
+  
+    <!-- TIME TABLE OPTIONS ACTIVITY -->
+    <string name="time_table_options_activity_title">View Time Tables</string>
+
+</resources>

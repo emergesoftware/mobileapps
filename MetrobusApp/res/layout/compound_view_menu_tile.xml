@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		xmlns:tools="http://schemas.android.com/tools"
+    		
+    		android:id="@+id/compoundViewMenuTile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/tileBackground"
+            android:orientation="vertical"
+            android:layout_margin="4dp"
+            android:padding="12dp"
+            >
+            
+            <ImageView 
+                android:id="@+id/menuTileImageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="left"
+                android:contentDescription="@string/app_name"
+                />
+            
+            <TextView 
+                android:id="@+id/menuTileTextView"
+                android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/titleBarTextColor"
+	            android:gravity="left"
+	            android:textSize="@dimen/small_font_size"
+	            android:layout_marginTop="12dp"
+                />
+            
+</LinearLayout>

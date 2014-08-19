@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res/za.co.emergeapps.metrobusapp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DashboardActivity" 
+    android:background="@drawable/application_background">
+
+    <!-- Title Bar -->
+    <LinearLayout 
+        android:id="@+id/dashBoardTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/titleBarBackgroundColor"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/titleBarTextColor"
+            android:gravity="left"
+            android:textSize="@dimen/medium_font_size"
+            android:text="@string/dashboard_activity_title"
+            />
+        
+    </LinearLayout>
+  
+    <GridLayout 
+        android:id="@+id/dashboardGridView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        >
+        
+        <!-- Time Tables -->
+        <view class="za.co.emergeapps.metrobusapp.MenuTileView" 
+            android:id="@+id/timeTableTile"
+            android:layout_width="124dp"
+            android:layout_height="124dp"
+            android:layout_margin="8dp"
+            custom:titleText="@string/time_table_tile_title"
+            custom:imageSource="@drawable/time_tables_tile_icon"
+            />
+        
+        <!-- Search -->
+         <view class="za.co.emergeapps.metrobusapp.MenuTileView" 
+             android:id="@+id/searchTile"
+            android:layout_width="124dp"
+            android:layout_height="124dp"
+            android:layout_margin="8dp"
+            custom:titleText="@string/search_tile_title"
+            custom:imageSource="@drawable/search_tile_icon"
+            />
+        
+         <!-- Locate -->
+          <view class="za.co.emergeapps.metrobusapp.MenuTileView" 
+              android:id="@+id/locateTile"
+            android:layout_width="124dp"
+            android:layout_height="124dp"
+            android:layout_margin="8dp"
+            custom:titleText="@string/locate_tile_title"
+            custom:imageSource="@drawable/locate_tile_icon"
+            />
+        
+         <!-- Fares -->
+          <view class="za.co.emergeapps.metrobusapp.MenuTileView" 
+            android:id="@+id/faresTile"
+            android:layout_width="124dp"
+            android:layout_height="124dp"
+            android:layout_margin="8dp"
+            custom:titleText="@string/fares_tile_title"
+            custom:imageSource="@drawable/fares_tile_icon"
+            />
+        
+         <!-- Contact -->
+         <view class="za.co.emergeapps.metrobusapp.MenuTileView" 
+            android:id="@+id/contactTile"
+            android:layout_width="124dp"
+            android:layout_height="124dp"
+            android:layout_margin="8dp"
+            custom:titleText="@string/contact_title_title"
+            custom:imageSource="@drawable/contact_tile_icon"
+            />
+         
+    </GridLayout>
+        
+ 
+    
+</LinearLayout>

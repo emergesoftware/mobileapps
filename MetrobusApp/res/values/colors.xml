@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="titleBarTextColor">#FFFFFF</color>
+    <color name="titleBarBackgroundColor">#3366CC</color>
+    <color name="tileBackground">#3366CC</color>
+    <color name="defaultTextColor">#000000</color>
+</resources>

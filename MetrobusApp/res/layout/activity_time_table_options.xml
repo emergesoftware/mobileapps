@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimeTableOptionsActivity" 
+    android:background="@drawable/application_background"
+    android:orientation="vertical">
+
+    <!-- Title Bar -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/titleBarBackgroundColor"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/titleBarTextColor"
+            android:gravity="left"
+            android:textSize="@dimen/medium_font_size"
+            android:text="@string/time_table_options_activity_title"
+            />
+        
+    </LinearLayout>
+   
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        
+	    <LinearLayout 
+	        android:orientation="vertical"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="12dp"
+	        android:layout_marginRight="12dp"
+	        android:layout_marginTop="12dp"
+	        >
+	        
+	         <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/defaultTextColor"
+	            android:gravity="left"
+	            android:textSize="@dimen/medium_font_size"
+	            android:text="I know the route number:"
+	            android:layout_margin="6dp"
+	            />
+	         
+	         <EditText 
+	            android:id="@+id/routeNumberEditText"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/defaultTextColor"
+	            android:gravity="left"
+	            android:textSize="@dimen/medium_font_size"
+	            android:layout_margin="6dp"
+	            android:inputType="number"
+	            android:background="@drawable/default_edit_text_background"
+	            android:paddingLeft="12dp"
+	            android:paddingRight="12dp"
+	            android:paddingTop="6dp"
+	            android:paddingBottom="6dp"
+	            />
+	        
+	         <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/defaultTextColor"
+	            android:gravity="center"
+	            android:textSize="@dimen/medium_font_size"
+	            android:text="OR"
+	            android:layout_margin="6dp"
+	            />
+	         
+	         <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/defaultTextColor"
+	            android:gravity="left"
+	            android:textSize="@dimen/medium_font_size"
+	            android:text="Search route by location:"
+	            android:layout_margin="6dp"
+	            />
+	         
+	         <EditText 
+	            android:id="@+id/searchRouteByLocationEditText"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/defaultTextColor"
+	            android:gravity="left"
+	            android:textSize="@dimen/medium_font_size"
+	            android:layout_margin="6dp"
+	            android:inputType="text"
+	            android:background="@drawable/default_edit_text_background"
+	            android:paddingLeft="12dp"
+	            android:paddingRight="12dp"
+	            android:paddingTop="6dp"
+	            android:paddingBottom="6dp"
+	            />
+	         
+	    </LinearLayout>
+	    
+	</ScrollView>
+</LinearLayout>
